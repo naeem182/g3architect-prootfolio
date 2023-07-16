@@ -11,6 +11,7 @@
 header {
     background-color: rgba(255, 144, 14, 0.10);
     padding: 3em 8em;
+
 }
 
 nav {
@@ -41,7 +42,7 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #424242;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -57,13 +58,8 @@ nav li a {
 
 }
 
-.bant {
-    font-weight: 700;
-    font-size: 3rem;
 
-}
-
-.ban-d {
+.descrip {
     font-weight: 500;
     font-size: 1.5em;
     padding: 1em;
@@ -74,6 +70,7 @@ nav li a {
 .banner img {
     width: 100%;
     margin-top: 1.4rem;
+
 }
 
 /*shared content*/
@@ -87,6 +84,47 @@ nav li a {
     border-radius: 1em;
     border: none;
     cursor: pointer;
+}
+
+/*team container design      */
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 6rem auto;
+    align-items: center;
+    text-align: center;
+}
+
+.team {
+    flex: 1;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.team-text-container {
+    text-align: left;
+    margin-left: 4em;
+    padding-left: none;
+}
+
+.team-text-container .title {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5%;
+
+    gap: 2em;
+
 }
 
 /*responsive style*/
