@@ -131,23 +131,40 @@ nav li a {
 /*mobile devices*/
 @media screen and (max-width:576px) {
 
-    header {
+    main,
+    header,
+    .team-text-container .title {
         padding: 18px;
 
 
     }
 
+    .team-container,
     nav,
     nav>ul {
 
         flex-direction: column;
     }
 
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-container {
+
+
+        width: 100%;
+        margin: none;
+
+    }
+
 }
 
 
 /*tablet or medium devices*/
-@media screen and (min-width:576px) and (max-width:960px) {
+@media screen and (min-width:576px) and (max-width:1010px) {
+
 
     header {
         padding: 50px;
@@ -155,9 +172,22 @@ nav li a {
 
     }
 
+    .team-img-container,
+    nav>ul {
+        flex-wrap: wrap;
+    }
+
+    .team-container,
     nav {
 
         flex-direction: column;
+    }
+
+    .team-container {
+
+        width: 100%;
+        margin: none;
+
     }
 
 }
