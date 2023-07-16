@@ -127,10 +127,100 @@ nav li a {
 
 }
 
+/*feature style*/
+.features {
+    width: 82%;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 7rem;
+
+
+}
+
+
+.feature-cart {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.fea-t {
+    padding: 2rem 0rem .1rem 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.feature-iteam {
+    padding: 2rem;
+    max-width: 50%;
+
+
+}
+
+.feature-iteam-content {
+
+    background-color: #e6dddd;
+    border-radius: 3rem;
+
+}
+
+.feature-iteam-img {
+    padding: 2rem;
+    border-radius: 1rem;
+
+    margin-top: 2rem;
+}
+
+.feature-iteam-img img {
+    width: fit-content;
+    margin-left: 4rem;
+    height: 90%;
+}
+
+.tenyear {
+    background-color: #ff900e;
+    width: fit-content;
+    color: #fff;
+    margin: 0;
+    padding: 0rem 1rem;
+    position: relative;
+    bottom: 4.5rem;
+}
+
+.tenyear-t {
+    padding: .4rem 1.2rem 0rem 1.2rem;
+    margin: 0;
+    text-align: center;
+
+    align-items: center;
+
+    font-size: 4rem;
+
+    font-weight: 700;
+
+}
+
+.tenyear-d {
+    padding: 0rem 1.2rem 1.2rem 1.2rem;
+    text-align: center;
+    margin-top: 0;
+
+
+    align-items: center;
+
+    font-size: 2rem;
+
+    font-weight: 400;
+
+}
+
+
 /*responsive style*/
 /*mobile devices*/
 @media screen and (max-width:576px) {
 
+    .feature-iteam-img,
+    .feature-iteam,
     main,
     header,
     .team-text-container .title {
@@ -139,11 +229,13 @@ nav li a {
 
     }
 
+    .feature-cart,
     .team-container,
     nav,
     nav>ul {
 
         flex-direction: column;
+        gap: 0;
     }
 
 
@@ -151,12 +243,21 @@ nav li a {
         grid-template-columns: 1fr;
     }
 
+
+    .feature-iteam,
     .team-container {
 
 
         width: 100%;
         margin: none;
+        max-width: 100%;
 
+    }
+
+    .feature-iteam-img img {
+        width: 20rem;
+        margin-left: 0;
+        height: 90%;
     }
 
 }
@@ -172,6 +273,7 @@ nav li a {
 
     }
 
+    .feature-cart,
     .team-img-container,
     nav>ul {
         flex-wrap: wrap;
@@ -183,11 +285,20 @@ nav li a {
         flex-direction: column;
     }
 
+    .feature-iteam,
     .team-container {
+
 
         width: 100%;
         margin: none;
+        max-width: 100%;
 
+    }
+
+    .feature-iteam-img img {
+        width: 40rem;
+
+        height: 60%;
     }
 
 }
